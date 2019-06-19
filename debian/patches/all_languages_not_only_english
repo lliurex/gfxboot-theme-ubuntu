@@ -1,0 +1,20 @@
+--- a/Makefile
++++ b/Makefile
+@@ -68,7 +68,7 @@
+ 	@echo $(DEFAULT_LANG) >boot/lang
+ 	@echo $(DEFAULT_LANG) >>boot/langlist
+ endif
+-	@cd boot && echo $(FILES_BOOT_EN) | sed -e "s/ /\n/g" | cpio --quiet -o >message
++	@cd boot && echo $(FILES_BOOT) | sed -e "s/ /\n/g" | cpio --quiet -o >message
+ 
+ installdir: install.config install $(INCLUDES)
+ 	@cp -a po/*.tr install
+@@ -77,7 +77,7 @@
+ ifdef DEFAULT_LANG
+ 	@echo $(DEFAULT_LANG) >install/lang
+ endif
+-	@cd install && echo $(FILES_BOOT_EN) | sed -e "s/ /\n/g" | cpio --quiet -o >bootlogo
++	@cd install && echo $(FILES_BOOT) | sed -e "s/ /\n/g" | cpio --quiet -o >bootlogo
+ 	@tar -C install -czf install/bootlogo.tar.gz bootlogo $(INST_EXT)
+ 
+ font:
