@@ -94,7 +94,7 @@ Index: fuentes/langnames.inc
    [ "bo" "bo_IN" "Tibetan" ]
    [ "bs" "bs_BA" "Bosanski" ]
    [ "ca" "ca_ES" "Català" ]
-+  [ "ca@valencia" "ca_ES@valencia" "Valencià" ]
++  [ "ca@valencia" "ca_ES.utf8@valencia" "Valencià" ]
    [ "cs" "cs_CZ" "Čeština" ]
    [ "da" "da_DK" "Dansk" ]
    [ "de" "de_DE" "Deutsch" ]
