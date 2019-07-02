@@ -32,7 +32,7 @@ Index: fuentes/Makefile
  TRANSLATIONS = $(addsuffix .tr,en $(filter-out ar bn bo dz gu hi km ml mn my ne pa ta th ug, $(notdir $(basename $(wildcard po/*.po)))))
  
 -DEFAULT_LANG =
-+DEFAULT_LANG = ca@valencia
++DEFAULT_LANG = valencia
  
  PIC_COMMON   = back.jpg
  
@@ -54,7 +54,7 @@ Index: fuentes/common.inc
          config.lang
          config.lang "_" strstr 0 eq {
 -          "debian-installer/language=%s "
-+            config.lang "ca@valencia" ne {
++            config.lang "valencia" ne {
 +                "debian-installer/language=%s "
 +            } {
 +                "debian-installer/language=ca_ES@valencia "
@@ -70,7 +70,7 @@ Index: fuentes/keytables.inc
    [ "cm" keymap.cm "Cameroon" [ ] .undef ]
    [ "ca" keymap.ca "Canada" [ "_CA" ] .undef ]
    [ "es_cat" keymap.es_cat "Catalan" [ "ca_ES" ] .undef ]
-+  [ "es_cat" keymap.es_cat "Valencian" [ "ca_ES@valencia" ] .undef ]
++  [ "es_cat" keymap.es_cat "Valencian" [ "ca_ES.utf8@valencia" ] .undef ]
    [ "cn" keymap.cn "Chinese" [ "zh_CN" ] .undef ]
    [ "cd" keymap.cd "Congo" [ ] .undef ]
    [ "hr" keymap.hr "Croatian" [ "hr_" ] .undef ]
@@ -82,7 +82,7 @@ Index: fuentes/langlist
  bo
  bs
  ca
-+ca@valencia
++ca_ES.utf8@valencia
  cs
  da
  de
@@ -94,7 +94,7 @@ Index: fuentes/langnames.inc
    [ "bo" "bo_IN" "Tibetan" ]
    [ "bs" "bs_BA" "Bosanski" ]
    [ "ca" "ca_ES" "Català" ]
-+  [ "ca@valencia" "ca_ES.utf8@valencia" "Valencià" ]
++  [ "valencia" "ca_ES.utf8@valencia" "Valencià" ]
    [ "cs" "cs_CZ" "Čeština" ]
    [ "da" "da_DK" "Dansk" ]
    [ "de" "de_DE" "Deutsch" ]
@@ -224,10 +224,10 @@ Index: fuentes/po/eu.po
  
  #. Boot menu item; a ^ prefix indicates a unique accelerator key.
  #. txt_menuitem_install_kubuntu
-Index: fuentes/po/ca@valencia.po
+Index: fuentes/po/ca_ES.utf8@valencia.po
 ===================================================================
 --- /dev/null
-+++ fuentes/po/ca@valencia.po
++++ fuentes/po/ca_ES.utf8@valencia.po
 @@ -0,0 +1,464 @@
 +# LANGUAGE translations for boot loader
 +# Copyright (C) 2005 SUSE Linux GmbH
